@@ -689,10 +689,10 @@ DailyRotateFile.prototype._getFilename = function () {
       formattedDate = this.getFormattedDate();
     }
 
-    return formattedDate + this._basename;
+    return formattedDate + this._basename + '.log';
   }
 
-  return this._basename + formattedDate;
+  return this._basename + formattedDate + '.log';
 };
 
 //
